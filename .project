@@ -1,0 +1,23 @@
+# Gambas Project File 3.0
+Title=abrircajadesderuta
+Startup=main
+Icon=irA.png
+Version=0.0.1
+Component=gb.image
+Component=gb.gui
+Component=gb.form
+Description="Si tienes el el portapapeles una ruta, abre el programa CAJA con esa ruta, sino, simplemente abre CAJA"
+Authors="Julio Sanchez Berro. enero de 2022"
+TabSize=2
+Language=en_US
+Maintainer=jsbsan
+Address=jusabejusabe@gmail.com
+Url=https://jsbsan.blogspot.com/
+License=General Public License
+PackageName=abrircajadesderuta-0.0.1
+CreateEachDirectory=1
+Packager=1
+Systems=debian
+Menus=debian:"Applications/Accessibility"
+Categories=debian:"Accessibility"
+Groups=debian:"admin"

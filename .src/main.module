@@ -1,0 +1,21 @@
+' Gambas module file
+
+Public Sub main()
+
+  Dim ruta As String
+
+  Try ruta = Clipboard.Paste("text/plain")
+  If Error Then
+    Exec "caja"
+  Else
+    ruta = Replace(ruta, "\n", "")
+    If IsDir(ruta) Then
+      Exec ["caja", ruta]
+    Else
+      Exec ["caja"]
+    Endif
+
+  Endif
+  Quit
+
+End
