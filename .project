@@ -2,7 +2,7 @@
 Title=abrircajadesderuta
 Startup=main
 Icon=irA.png
-Version=0.0.1
+Version=0.0.2
 Component=gb.image
 Component=gb.gui
 Component=gb.form
@@ -14,7 +14,7 @@ Maintainer=jsbsan
 Address=jusabejusabe@gmail.com
 Url=https://jsbsan.blogspot.com/
 License=General Public License
-PackageName=abrircajadesderuta-0.0.1
+PackageName=abrircajadesderuta-0.0.2
 CreateEachDirectory=1
 Packager=1
 Systems=debian
