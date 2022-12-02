@@ -11,20 +11,21 @@ Public Sub main()
   Else
     ruta = Replace(ruta, "\n", "")
     If IsDir(ruta) Then
-      Exec ["caja", ruta]
+      Exec ["caja", User.home & "/" & Replace(ruta, User.home, "")]
     Else
       If RInStr(ruta, "/") > 0 Then
         soloruta = Mid$(ruta, 1, RInStr(ruta, "/") - 1)
         If IsDir(soloruta) Then
-
-          Exec ["caja", soloruta]
+          ' soloruta = Replace(soloruta, " ", "\\ ")
+          Exec ["caja", User.home & "/" & Replace(soloruta, User.home, "")]
         Else
           Exec ["caja"]
         Endif
+      Else
+        Exec ["caja"]
 
       Endif
 
-      Exec ["caja"]
     Endif
 
   Endif

@@ -1,3 +1,6 @@
+* Fri Dec 02 2022 jsbsan <jusabejusabe@gmail.com> 0.0.3
+- mejora en la lectura de ruta con espacios
+
 * Fri Dec 02 2022 jsbsan <jusabejusabe@gmail.com> 0.0.2
 - admita tambien ruta con fichero, y abre con caja la ruta
 
