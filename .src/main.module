@@ -4,6 +4,8 @@ Public Sub main()
 
   Dim ruta As String
   Dim soloruta As String
+  Dim lista As String
+  Dim a As Integer
 
   Try ruta = Clipboard.Paste("text/plain")
   If Error Then
@@ -11,14 +13,16 @@ Public Sub main()
   Else
     ruta = Replace(ruta, "\n", "")
     If IsDir(ruta) Then
+
       Exec ["caja", User.home & "/" & Replace(ruta, User.home, "")]
     Else
       If RInStr(ruta, "/") > 0 Then
         soloruta = Mid$(ruta, 1, RInStr(ruta, "/") - 1)
         If IsDir(soloruta) Then
           ' soloruta = Replace(soloruta, " ", "\\ ")
-          Exec ["caja", User.home & "/" & Replace(soloruta, User.home, "")]
+          Exec ["caja", User.home & Replace(soloruta, User.home, "")]
         Else
+
           Exec ["caja"]
         Endif
       Else
@@ -29,6 +33,7 @@ Public Sub main()
     Endif
 
   Endif
+
   Quit
 
 End
